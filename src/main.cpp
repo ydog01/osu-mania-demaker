@@ -1,5 +1,4 @@
 //by ydog01. -- 2026/2/6
-#include "Osum.hpp"
 #include "Demaker.hpp"
 #include <iostream>
 #include <fstream>
@@ -7,6 +6,8 @@
 #include <thread>
 #include <chrono>
 #include <cstdlib>
+#include <string>
+#include <sstream>
 
 namespace fs = std::filesystem;
 
@@ -16,9 +17,11 @@ void waitForCompleteFile(const fs::path& filePath)
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
 }
 
-void processManiaMaps()
+void processManiaMaps(bool enableAlign, int rangeMs)
 {
     Demaker demaker;
+    demaker.setAlignParams(enableAlign, rangeMs);
+    
     std::vector<fs::path> filesToProcess;
     
     for (const auto& entry : fs::recursive_directory_iterator("tmp"))
@@ -168,6 +171,36 @@ int main()
         if (!fs::exists(inputPath))
             throw std::runtime_error("Input file does not exist: " + inputPath);
         
+        bool enableAlign = false;
+        int rangeMs = 0;
+        
+        std::cout << "Enable note alignment? (y/n): ";
+        std::string alignInput;
+        std::getline(std::cin, alignInput);
+        
+        if (alignInput == "y" || alignInput == "Y")
+        {
+            enableAlign = true;
+            std::cout << "Enter alignment range (ms): ";
+            std::string rangeInput;
+            std::getline(std::cin, rangeInput);
+            
+            try
+            {
+                rangeMs = std::stoi(rangeInput);
+                if (rangeMs < 0)
+                {
+                    std::cout << "Range cannot be negative. Using absolute value." << std::endl;
+                    rangeMs = std::abs(rangeMs);
+                }
+            }
+            catch (...)
+            {
+                std::cout << "Invalid range. Using default value: 5ms" << std::endl;
+                rangeMs = 5;
+            }
+        }
+        
         std::ofstream paramsFile("params");
         if (!paramsFile)
             throw std::runtime_error("Cannot create params file");
@@ -187,7 +220,7 @@ int main()
         if (!fs::exists("tmp") || fs::is_empty("tmp"))
             throw std::runtime_error("tmp folder is empty or does not exist");
         
-        processManiaMaps();
+        processManiaMaps(enableAlign, rangeMs);
         
         std::string outputPath = fs::path(inputPath).parent_path().string() + "/output.osz";
         
@@ -205,6 +238,7 @@ int main()
             throw std::runtime_error("encoder.exe failed with code: " + std::to_string(encoderResult));
         
         std::cout << "Processing completed successfully!" << std::endl;
+        std::cout << "Output file: " << outputPath << std::endl;
     }
     catch (const std::exception& e)
     {

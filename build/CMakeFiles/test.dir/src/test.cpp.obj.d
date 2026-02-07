@@ -1,6 +1,5 @@
-CMakeFiles/demaker.dir/src/main.cpp.obj: \
- D:\code\projects\osu-tools\demaker\src\main.cpp \
- D:\code\projects\osu-tools\demaker\src\Demaker.hpp \
+CMakeFiles/test.dir/src/test.cpp.obj: \
+ D:\code\projects\osu-tools\demaker\src\test.cpp \
  D:\code\projects\osu-tools\demaker\src\Osum.hpp \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/string \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/requires_hosted.h \
@@ -155,6 +154,7 @@ CMakeFiles/demaker.dir/src/main.cpp.obj: \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/sstream \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/sstream.tcc \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/iostream \
+ D:\code\projects\osu-tools\demaker\src\Demaker.hpp \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/set \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_set.h \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_multiset.h \
@@ -165,38 +165,4 @@ CMakeFiles/demaker.dir/src/main.cpp.obj: \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/uniform_int_dist.h \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_tempbuf.h \
  D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/pstl/glue_algorithm_defs.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/pstl/execution_defs.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/filesystem \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/fs_fwd.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/cstdint \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stdint.h \
- D:/code/g++/mingw64/x86_64-w64-mingw32/include/stdint.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/chrono.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/ratio \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/limits \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/ctime \
- D:/code/g++/mingw64/x86_64-w64-mingw32/include/time.h \
- D:/code/g++/mingw64/x86_64-w64-mingw32/include/_timeval.h \
- D:/code/g++/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/parse_numbers.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/fs_path.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/locale \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/locale_facets_nonio.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/locale_facets_nonio.tcc \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/locale_conv.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/iomanip \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/quoted_string.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/codecvt \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/ext/concurrence.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/shared_ptr.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/shared_ptr_base.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/allocated_ptr.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/unique_ptr.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/fs_dir.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/fs_ops.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/thread \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/std_thread.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/this_thread_sleep.h \
- D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/chrono
+ D:/code/g++/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/pstl/execution_defs.h

@@ -254,6 +254,15 @@ demaker_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 demaker_SOURCE_DIR:STATIC=D:/code/projects/osu-tools/demaker
 
+//Value Computed by CMake
+test_BINARY_DIR:STATIC=D:/code/projects/osu-tools/demaker/build
+
+//Value Computed by CMake
+test_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+test_SOURCE_DIR:STATIC=D:/code/projects/osu-tools/demaker
+
 
 ########################
 # INTERNAL cache entries
