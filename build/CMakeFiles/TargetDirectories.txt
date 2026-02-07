@@ -1,3 +1,0 @@
-D:/code/projects/osu-tools/demaker/build/CMakeFiles/demaker.dir
-D:/code/projects/osu-tools/demaker/build/CMakeFiles/edit_cache.dir
-D:/code/projects/osu-tools/demaker/build/CMakeFiles/rebuild_cache.dir

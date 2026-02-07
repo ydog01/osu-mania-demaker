@@ -1,3 +1,0 @@
-D:\code\cmake\bin\cmake.exe -E rm -f CMakeFiles\test.dir/objects.a
-D:\code\g++\mingw64\bin\ar.exe qc CMakeFiles\test.dir/objects.a @CMakeFiles\test.dir\objects1.rsp
-D:\code\g++\mingw64\bin\c++.exe  -static -static-libgcc -static-libstdc++ -s -O2 -DNDEBUG -Wl,--whole-archive CMakeFiles\test.dir/objects.a -Wl,--no-whole-archive -o D:\code\projects\osu-tools\demaker\bin\test.exe -Wl,--out-implib,libtest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test.dir\linkLibs.rsp
