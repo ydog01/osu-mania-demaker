@@ -222,12 +222,13 @@ int main()
         
         processManiaMaps(enableAlign, rangeMs);
         
-        std::string outputPath = fs::path(inputPath).parent_path().string() + "/output.osz";
+        fs::path inputFilePath(inputPath);
+        fs::path outputPath = inputFilePath.parent_path() / ("[demaker] " + inputFilePath.filename().string());
         
         std::ofstream paramsFileOut("params");
         if (!paramsFileOut)
             throw std::runtime_error("Cannot modify params file");
-        paramsFileOut << outputPath;
+        paramsFileOut << outputPath.string();
         paramsFileOut.close();
         
         if (!fs::exists("encoder.exe"))
@@ -238,7 +239,7 @@ int main()
             throw std::runtime_error("encoder.exe failed with code: " + std::to_string(encoderResult));
         
         std::cout << "Processing completed successfully!" << std::endl;
-        std::cout << "Output file: " << outputPath << std::endl;
+        std::cout << "Output file: " << outputPath.string() << std::endl;
     }
     catch (const std::exception& e)
     {
